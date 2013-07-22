@@ -1,5 +1,7 @@
 jQuery(document).ready(function($) {
 
+	var gallery_counter = 1;
+
 	/* Gallery Shortcode Integration */
 
 	$('.gallery').append('<div class="clear"></div>');
@@ -20,17 +22,37 @@ jQuery(document).ready(function($) {
 			    $(this).addClass('image-button');
 			}
 
+			// Remove caption
+			$(this).attr( 'title', '' );
+
 		});
+
+	});
+
+	/* Add prettyPhoto's gallery extension */
+
+	var gallery_counter = 1, current_rel = '';
+
+	$('.themeblvd-gallery').each(function(){
+
+		// Filter on gallery extension
+		$(this).find('a[rel^="themeblvd_lightbox"], a[rel^="prettyPhoto"]').each(function(){
+			current_rel = $(this).attr('rel');
+			$(this).attr('rel', current_rel+'[gallery_'+gallery_counter+']' );
+		});
+
+		// Increase gallery counter
+		gallery_counter++;
 
 	});
 
 	/* Bind prettyPhoto */
 
-	$('a[rel^="prettyPhoto"], a[rel^="themeblvd_lightbox"], a[rel^="featured_themeblvd_lightbox"]').prettyPhoto({
+	$('a[rel^="prettyPhoto"], a[rel^="themeblvd_lightbox"]').prettyPhoto({
 		social_tools: false, // Share icons are not compatible with IE9
 		deeplinking: false,
-		overlay_gallery: false,
-		show_title: false
+		overlay_gallery: false
+		//show_title: false
 	});
 
 });

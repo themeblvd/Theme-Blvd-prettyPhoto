@@ -18,14 +18,14 @@ div.pp_default .pp_description {
 	div.pp_default .pp_nav .pp_pause,
 	div.pp_default a.pp_arrow_previous,
 	div.pp_default a.pp_arrow_next {
-		background-image: url('../images/prettyphoto/sprite_2x.png');
+		background-image: url('../images/sprite_2x.png');
 		background-size: 130px 147px;
 	}
 	div.pp_default .pp_next:hover {
-		background-image: url('../images/prettyphoto/sprite_next_2x.png');background-size: 28px 30px;
+		background-image: url('../images/sprite_next_2x.png');background-size: 28px 30px;
 	}
 	div.pp_default .pp_previous:hover {
-		background-image: url('../images/prettyphoto/sprite_prev_2x.png');background-size: 28px 30px;
+		background-image: url('../images/sprite_prev_2x.png');background-size: 28px 30px;
 	}
 	div.pp_default .pp_content,
 	div.light_rounded .pp_content {
@@ -107,17 +107,17 @@ div.pp_default .pp_description {
 	div.pp_default .pp_top .pp_right,
 	div.pp_default .pp_bottom .pp_left,
 	div.pp_default .pp_bottom .pp_right {
-		background-image: url('../images/prettyphoto/sprite_2x.png');
+		background-image: url('../images/sprite_2x.png');
 		background-size: 130px 147px;
 	}
 	div.pp_default .pp_content_container .pp_left,
 	div.pp_default .pp_content_container .pp_right {
-		background-image: url('../images/prettyphoto/sprite_y_2x.png');
+		background-image: url('../images/sprite_y_2x.png');
 		background-size: 61px 130px;
 	}
 	div.pp_default .pp_top .pp_middle,
 	div.pp_default .pp_bottom .pp_middle {
-		background-image: url('../images/prettyphoto/sprite_x_2x.png');
+		background-image: url('../images/sprite_x_2x.png');
 		background-size: 130px 47px;
 	}
 	*/
